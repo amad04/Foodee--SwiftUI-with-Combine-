@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B94C3A281AB07A001B491A /* YelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B94C39281AB07A001B491A /* YelpModel.swift */; };
+		00B94C3B281AB07A001B491A /* YelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B94C39281AB07A001B491A /* YelpModel.swift */; };
 		00F54733281677E700FEB6DB /* FoodeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54723281677E600FEB6DB /* FoodeeApp.swift */; };
 		00F54734281677E700FEB6DB /* FoodeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54723281677E600FEB6DB /* FoodeeApp.swift */; };
-		00F54735281677E700FEB6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54724281677E600FEB6DB /* ContentView.swift */; };
-		00F54736281677E700FEB6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54724281677E600FEB6DB /* ContentView.swift */; };
+		00F54735281677E700FEB6DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54724281677E600FEB6DB /* HomeView.swift */; };
+		00F54736281677E700FEB6DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F54724281677E600FEB6DB /* HomeView.swift */; };
 		00F54737281677E700FEB6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F54725281677E700FEB6DB /* Assets.xcassets */; };
 		00F54738281677E700FEB6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F54725281677E700FEB6DB /* Assets.xcassets */; };
+		00F547422816CDA500FEB6DB /* YelpApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F547412816CDA500FEB6DB /* YelpApiService.swift */; };
+		00F547432816CDA500FEB6DB /* YelpApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F547412816CDA500FEB6DB /* YelpApiService.swift */; };
+		00F547452816DE9800FEB6DB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F547442816DE9800FEB6DB /* HomeViewModel.swift */; };
+		00F547462816DE9800FEB6DB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F547442816DE9800FEB6DB /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B94C39281AB07A001B491A /* YelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpModel.swift; sourceTree = "<group>"; };
 		00F54723281677E600FEB6DB /* FoodeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodeeApp.swift; sourceTree = "<group>"; };
-		00F54724281677E600FEB6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00F54724281677E600FEB6DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00F54725281677E700FEB6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F5472A281677E700FEB6DB /* Foodee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F54730281677E700FEB6DB /* Foodee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F54732281677E700FEB6DB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		00F547412816CDA500FEB6DB /* YelpApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiService.swift; sourceTree = "<group>"; };
+		00F547442816DE9800FEB6DB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				00F54723281677E600FEB6DB /* FoodeeApp.swift */,
-				00F54724281677E600FEB6DB /* ContentView.swift */,
+				00F547472816DEA200FEB6DB /* Home */,
 				00F54725281677E700FEB6DB /* Assets.xcassets */,
+				00F547412816CDA500FEB6DB /* YelpApiService.swift */,
+				00B94C39281AB07A001B491A /* YelpModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +87,15 @@
 				00F54732281677E700FEB6DB /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		00F547472816DEA200FEB6DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00F54724281677E600FEB6DB /* HomeView.swift */,
+				00F547442816DE9800FEB6DB /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F54735281677E700FEB6DB /* ContentView.swift in Sources */,
+				00F54735281677E700FEB6DB /* HomeView.swift in Sources */,
+				00B94C3A281AB07A001B491A /* YelpModel.swift in Sources */,
+				00F547422816CDA500FEB6DB /* YelpApiService.swift in Sources */,
 				00F54733281677E700FEB6DB /* FoodeeApp.swift in Sources */,
+				00F547452816DE9800FEB6DB /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F54736281677E700FEB6DB /* ContentView.swift in Sources */,
+				00F54736281677E700FEB6DB /* HomeView.swift in Sources */,
+				00B94C3B281AB07A001B491A /* YelpModel.swift in Sources */,
+				00F547432816CDA500FEB6DB /* YelpApiService.swift in Sources */,
 				00F54734281677E700FEB6DB /* FoodeeApp.swift in Sources */,
+				00F547462816DE9800FEB6DB /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -323,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AmadWalid.Foodee.Foodee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AmadWalid.Foodee;
 				PRODUCT_NAME = Foodee;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -353,7 +381,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AmadWalid.Foodee.Foodee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AmadWalid.Foodee;
 				PRODUCT_NAME = Foodee;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
